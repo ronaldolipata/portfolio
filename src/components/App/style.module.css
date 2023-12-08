@@ -1,0 +1,53 @@
+.loading {
+  background-image: url('https://drive.google.com/uc?id=1Lco-1n3MbfGLLE2_cRmGWplha8jTqnp0');
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-image: url('https://drive.google.com/uc?id=1Lco-1n3MbfGLLE2_cRmGWplha8jTqnp0');
+  background-position: center;
+  background-size: contain;
+  padding: 0 1.5rem;
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .container {
+    background-image: url('https://drive.google.com/uc?id=1Fcvcl4iCBV99K3Z3GuPUrYayz-lmSkB1');
+    width: min(75%, 85.375rem);
+    margin-inline: auto;
+    padding: 0;
+  }
+}
+
+/* 1366px */
+@media (min-width: 85.375em) {
+  .container {
+    width: min(90%, 85.375rem);
+  }
+
+  .main > section {
+    margin: 5rem 0;
+    margin-inline: auto;
+  }
+
+  .main > section:first-child {
+    margin: 0;
+  }
+
+  .main > section:last-child {
+    margin: 0;
+    margin-inline: auto;
+  }
+}
+
+/* 1920px */
+@media (min-width: 120em) {
+  .main > section {
+    margin: 0;
+    margin-inline: auto;
+  }
+}
