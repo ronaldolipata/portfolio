@@ -55,7 +55,7 @@ export default function NavBar() {
               </li>
             ))}
             <a
-              href='#'
+              href='#contact'
               className={`${style.ctaButton} ${style.mobile}`}
               onClick={removeStyle}
             >
@@ -63,7 +63,7 @@ export default function NavBar() {
             </a>
           </ul>
         </nav>
-        <a href='#' className={`${style.ctaButton} ${style.desktop}`}>
+        <a href='#contact' className={`${style.ctaButton} ${style.desktop}`}>
           Request Resume
         </a>
         <div
