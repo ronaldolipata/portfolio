@@ -58,21 +58,12 @@ export default function NavBar() {
               href='#'
               className={`${style.ctaButton} ${style.mobile}`}
               onClick={removeStyle}
-              target='_blank'
-              download
-              rel='noreferrer'
             >
               Request Resume
             </a>
           </ul>
         </nav>
-        <a
-          href='#'
-          className={`${style.ctaButton} ${style.desktop}`}
-          target='_blank'
-          download
-          rel='noreferrer'
-        >
+        <a href='#' className={`${style.ctaButton} ${style.desktop}`}>
           Request Resume
         </a>
         <div
