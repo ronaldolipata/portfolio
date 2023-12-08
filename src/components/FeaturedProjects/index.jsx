@@ -63,7 +63,7 @@ export default function FeaturedProjects() {
       projectType: 'freelance',
       github: '',
       demo: 'https://koolweld.com/',
-      completed: false,
+      completed: true,
       availability: true,
     },
     {
