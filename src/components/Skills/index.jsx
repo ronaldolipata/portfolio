@@ -18,7 +18,6 @@ import {
   SiWebpack,
   SiNextdotjs,
   SiRedux,
-  SiMaterialui,
   SiChakraui,
   SiJavascript,
   SiTypescript,
@@ -79,10 +78,6 @@ export default function Skills() {
         {
           tech: 'Redux Toolkit',
           img: <SiRedux />,
-        },
-        {
-          tech: 'Material UI',
-          img: <SiMaterialui />,
         },
         {
           tech: 'Chakra UI',
