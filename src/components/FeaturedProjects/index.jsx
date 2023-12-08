@@ -188,7 +188,7 @@ export default function FeaturedProjects() {
                     href={demo}
                     target='_blank'
                     onClick={
-                      availability ? false : (event) => event.preventDefault()
+                      availability ? null : (event) => event.preventDefault()
                     }
                     className={style.ctaButton}
                     rel='noreferrer'
