@@ -11,13 +11,13 @@ export default function About() {
           web applications that provide a seamless user experience.
         </p>
         <p className={style.text}>
-          With my skills in Figma, MERN stack, I can develop {''}
+          With my skills in MERN stack, REST API, Next.js, WordPress, and Figma, I can develop {''}
           <span className={style.primaryColor}>
             dynamic and interactive
           </span>{' '}
           frontend interfaces, as well as{' '}
           <span className={style.primaryColor}>efficient and robust</span>{' '}
-          backend that align with clients&apos; business objectives.
+          backend.
         </p>
         <p className={style.text}>
           I am a firm believer in the importance of staying up-to-date with the

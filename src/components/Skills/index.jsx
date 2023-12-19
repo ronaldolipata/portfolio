@@ -11,6 +11,7 @@ import {
   FaTrello,
   FaGithub,
   FaGitlab,
+  FaWordpress
 } from 'react-icons/fa';
 import {
   SiTailwindcss,
@@ -29,7 +30,9 @@ import {
   SiInsomnia,
   SiGoogleanalytics,
   SiFramer,
+  SiPhp
 } from 'react-icons/si';
+import { TbBrandMysql } from "react-icons/tb";
 import { DiScrum } from 'react-icons/di';
 import { ReactComponent as RestIcon } from '@/assets/svg/rest-api-icon.svg';
 import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
@@ -102,6 +105,18 @@ export default function Skills() {
         {
           tech: 'Mongoose',
           img: <MongooseIcon className={style.mongooseIcon} />,
+        },
+        {
+          tech: 'WordPress',
+          img: <FaWordpress/>,
+        },
+        {
+          tech: 'PHP',
+          img: <SiPhp/>,
+        },
+        {
+          tech: 'MySQL',
+          img: <TbBrandMysql />,
         },
       ],
     },

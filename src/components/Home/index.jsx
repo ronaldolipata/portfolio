@@ -13,9 +13,9 @@ export default function Home() {
         </h1>
         <p className={style.textOpacity}>
           I am proficient in both front-end and back-end web development,
-          capable of building complete and functional web applications. With
+          capable of building complete and functional websites and web applications. With
           expertise in JavaScript, databases, and frameworks, I can design,
-          develop, and deploy web solutions that meet clients&apos; needs.
+          develop, and deploy web solutions.
         </p>
         <a className={style.ctaButton} href="#contact">
           Get in touch
