@@ -1,17 +1,17 @@
 import style from '@/components/FeaturedProjects/style.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaWordpress, FaBootstrap } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import {
-  SiVite,
   SiNextdotjs,
   SiTailwindcss,
   SiJavascript,
   SiTypescript,
   SiExpress,
   SiMongodb,
+  SiPhp,
 } from 'react-icons/si';
-import { ReactComponent as M30Icon } from '@/assets/svg/m30-api-icon.svg';
+import { TbBrandMysql } from "react-icons/tb";
 import { ReactComponent as RestIcon } from '@/assets/svg/rest-api-icon.svg';
 import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
 
@@ -67,38 +67,50 @@ export default function FeaturedProjects() {
       availability: true,
     },
     {
-      name: 'Paytaka',
-      desc: 'A Virtual Wallet that has seven main features: Signup, Login, Cash in, Transfer Funds, Receive Funds, See Balance, and See Latest Transactions.',
+      name: 'Big Ben Group',
+      desc: 'Built website from scratch using WordPress custom theme. Used advanced Custom Field Groups, Custom Post Types, Contact Form 7 for lead generations, and carousel.',
       src: {
         iphone:
-          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1677150054/Web%20Dev%20Portfolio/featured-projects/paytaka-iphone_yikaby.png',
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703001604/bigben-iphone_rhezxf.png',
         mackbook:
-          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1677149868/Web%20Dev%20Portfolio/featured-projects/paytaka-macbook_sh8rld.png',
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703001605/bigben-macbook_uxvajh.png',
       },
 
       techUsed: [
         {
-          tech: 'Vite',
-          img: <SiVite />,
-        },
-        {
-          tech: 'React',
-          img: <FaReact />,
+          tech: 'HTML',
+          img: <FaHtml5 />,
         },
         {
           tech: 'CSS',
           img: <FaCss3Alt />,
         },
         {
-          tech: 'm30 API',
-          img: <M30Icon className={style.m30Icon} />,
+          tech: 'WordPress',
+          img: <FaWordpress />,
+        },
+        {
+          tech: 'Bootstrap',
+          img: <FaBootstrap />,
+        },
+        {
+          tech: 'PHP',
+          img: <SiPhp />,
+        },
+        {
+          tech: 'MySQL',
+          img: <TbBrandMysql />,
+        },
+        {
+          tech: 'JavaScript',
+          img: <SiJavascript />,
         },
       ],
-      projectType: 'personal',
+      projectType: 'employment',
       github: '',
-      demo: 'https://ronaldolipata.github.io/Paytaka-Virtual-Wallet/',
-      completed: true,
-      availability: false,
+      demo: 'https://bigbengroup.ph/',
+      completed: false,
+      availability: true,
     },
     {
       name: 'Card Matching Game - Space Theme',
@@ -231,3 +243,4 @@ export default function FeaturedProjects() {
     </section>
   );
 }
+
