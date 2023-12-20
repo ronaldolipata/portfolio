@@ -1,16 +1,11 @@
 import { FaLinkedin, FaGithubSquare, FaDribbbleSquare } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 import style from '@/components/Contact/style.module.css';
+import getCurrentYear from '../../utils/getCurrentYear';
 
 export default function Contact() {
-  const currentYear = () => {
-    const date = new Date();
-    const year = date.getFullYear();
-    return year;
-  };
-
   return (
-    <section id='contact' className={style.container}>
+    <section id="contact" className={style.container}>
       <h2 className={style.sectionTitle}>Get in touch</h2>
       <div className={style.textContainer}>
         <p className={style.text}>
@@ -25,29 +20,29 @@ export default function Contact() {
         </p>
         <div className={style.socialIconsContainer}>
           <a
-            href='https://www.linkedin.com/in/ronaldolipata/'
-            aria-label='Know more about Ronaldo Lipata in LinkedIn'
-            target='_blank'
+            href="https://www.linkedin.com/in/ronaldolipata/"
+            aria-label="Know more about Ronaldo Lipata in LinkedIn"
+            target="_blank"
             className={style.socialIcon}
-            rel='noreferrer'
+            rel="noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href='https://github.com/ronaldolipata'
-            aria-label='Know more about Ronaldo Lipata in GitHub'
-            target='_blank'
+            href="https://github.com/ronaldolipata"
+            aria-label="Know more about Ronaldo Lipata in GitHub"
+            target="_blank"
             className={style.socialIcon}
-            rel='noreferrer'
+            rel="noreferrer"
           >
             <FaGithubSquare />
           </a>
           <a
-            href='https://dribbble.com/ronaldolipata'
-            aria-label='Know more about Ronaldo Lipata in Dribbble'
-            target='_blank'
+            href="https://dribbble.com/ronaldolipata"
+            aria-label="Know more about Ronaldo Lipata in Dribbble"
+            target="_blank"
             className={`${style.socialIcon} ${style.dribbleIcon}`}
-            rel='noreferrer'
+            rel="noreferrer"
           >
             <FaDribbbleSquare />
           </a>
@@ -55,17 +50,17 @@ export default function Contact() {
         <div className={style.upworkContainer}>
           <a
             className={`${style.text} ${style.hire}`}
-            aria-label='Hire Ronaldo Lipata in Upwork'
-            href='https://www.upwork.com/freelancers/~0198bbbb2a2f09177a'
-            target='_blank'
-            rel='noreferrer'
+            aria-label="Hire Ronaldo Lipata in Upwork"
+            href="https://www.upwork.com/freelancers/~0198bbbb2a2f09177a"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className={style.primaryColor}>Hire me!</span>
             <SiUpwork className={style.upwork} />
           </a>
         </div>
         <p className={style.copyright}>
-          <span>Ronaldo Lipata &copy; {currentYear()}</span>
+          <span>Ronaldo Lipata &copy; {getCurrentYear()}</span>
         </p>
       </div>
     </section>
