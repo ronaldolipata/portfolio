@@ -11,7 +11,7 @@ import {
   FaTrello,
   FaGithub,
   FaGitlab,
-  FaWordpress
+  FaWordpress,
 } from 'react-icons/fa';
 import {
   SiTailwindcss,
@@ -30,9 +30,10 @@ import {
   SiInsomnia,
   SiGoogleanalytics,
   SiFramer,
-  SiPhp
+  SiPhp,
+  SiGraphql,
 } from 'react-icons/si';
-import { TbBrandMysql } from "react-icons/tb";
+import { TbBrandMysql } from 'react-icons/tb';
 import { DiScrum } from 'react-icons/di';
 import { ReactComponent as RestIcon } from '@/assets/svg/rest-api-icon.svg';
 import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
@@ -99,6 +100,10 @@ export default function Skills() {
           img: <RestIcon className={style.restIcon} />,
         },
         {
+          tech: 'GraphQL',
+          img: <SiGraphql />,
+        },
+        {
           tech: 'MongoDB',
           img: <SiMongodb />,
         },
@@ -108,11 +113,11 @@ export default function Skills() {
         },
         {
           tech: 'WordPress',
-          img: <FaWordpress/>,
+          img: <FaWordpress />,
         },
         {
           tech: 'PHP',
-          img: <SiPhp/>,
+          img: <SiPhp />,
         },
         {
           tech: 'MySQL',
@@ -194,7 +199,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id='skills' className={style.container}>
+    <section id="skills" className={style.container}>
       <h2 className={style.sectionTitle}>Tech Stacks</h2>
       <div className={style.subContainer}>
         {skillsData.map(({ scope, skills }) => (
