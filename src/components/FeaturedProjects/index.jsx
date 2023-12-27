@@ -169,7 +169,7 @@ export default function FeaturedProjects() {
         iphone:
           'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1677150055/Web%20Dev%20Portfolio/featured-projects/mixmatch-iphone_q44ydp.png',
         mackbook:
-          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1677149869/Web%20Dev%20Portfolio/featured-projects/mixmatch-macbook_twuojg.png',
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703692247/Web%20Dev%20Portfolio/featured-projects/mixmatch-macbook_d5kcso.png',
       },
       techUsed: [
         {
