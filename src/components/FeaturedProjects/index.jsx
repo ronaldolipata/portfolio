@@ -158,7 +158,7 @@ export default function FeaturedProjects() {
       ],
       projectType: 'employment',
       github: '',
-      demo: 'https://bigbengroup.ph/',
+      demo: 'https://innovnational.com/aboitizsustainability/',
       completed: false,
       availability: true,
     },
