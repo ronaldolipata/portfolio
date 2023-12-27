@@ -1,6 +1,12 @@
 import style from '@/components/FeaturedProjects/style.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaWordpress, FaBootstrap } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaWordpress,
+  FaBootstrap,
+} from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import {
   SiNextdotjs,
@@ -11,7 +17,7 @@ import {
   SiMongodb,
   SiPhp,
 } from 'react-icons/si';
-import { TbBrandMysql } from "react-icons/tb";
+import { TbBrandMysql } from 'react-icons/tb';
 import { ReactComponent as RestIcon } from '@/assets/svg/rest-api-icon.svg';
 import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
 
@@ -75,7 +81,51 @@ export default function FeaturedProjects() {
         mackbook:
           'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703001605/bigben-macbook_uxvajh.png',
       },
-
+      techUsed: [
+        {
+          tech: 'HTML',
+          img: <FaHtml5 />,
+        },
+        {
+          tech: 'CSS',
+          img: <FaCss3Alt />,
+        },
+        {
+          tech: 'WordPress',
+          img: <FaWordpress />,
+        },
+        {
+          tech: 'Bootstrap',
+          img: <FaBootstrap />,
+        },
+        {
+          tech: 'PHP',
+          img: <SiPhp />,
+        },
+        {
+          tech: 'MySQL',
+          img: <TbBrandMysql />,
+        },
+        {
+          tech: 'JavaScript',
+          img: <SiJavascript />,
+        },
+      ],
+      projectType: 'employment',
+      github: '',
+      demo: 'https://bigbengroup.ph/',
+      completed: false,
+      availability: true,
+    },
+    {
+      name: 'Sustainability Aboitiz',
+      desc: 'Re-code the website using WordPress custom theme. Used advanced Custom Field Groups, Custom Post Types, Contact Form 7 for lead generations, and carousel.',
+      src: {
+        iphone:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703691590/Web%20Dev%20Portfolio/featured-projects/sustainability-aboitiz-iphone_botgeg.png',
+        mackbook:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1703691589/Web%20Dev%20Portfolio/featured-projects/sustainability-aboitiz-macbook_ouioc9.png',
+      },
       techUsed: [
         {
           tech: 'HTML',
@@ -144,7 +194,7 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section id='projects'>
+    <section id="projects">
       {featuredProjectsData.map(
         (
           {
@@ -198,12 +248,12 @@ export default function FeaturedProjects() {
                 <div className={style.ctaContainer}>
                   <a
                     href={demo}
-                    target='_blank'
+                    target="_blank"
                     onClick={
                       availability ? null : (event) => event.preventDefault()
                     }
                     className={style.ctaButton}
-                    rel='noreferrer'
+                    rel="noreferrer"
                   >
                     {availability ? 'View Demo' : 'Not available'}
                   </a>
@@ -212,7 +262,7 @@ export default function FeaturedProjects() {
                       <span className={style.horizatalSeparation}>|</span>
                       <a
                         href={github}
-                        target='_blank'
+                        target="_blank"
                         className={style.repository}
                       >
                         Repository{' '}
@@ -228,12 +278,12 @@ export default function FeaturedProjects() {
                 <LazyLoadImage
                   className={style.projectImageIphone}
                   src={src.iphone}
-                  alt='featured project image in iphone'
+                  alt="featured project image in iphone"
                 />
                 <LazyLoadImage
                   className={style.projectImageMacbook}
                   src={src.mackbook}
-                  alt='featured project image in macbook'
+                  alt="featured project image in macbook"
                 />
               </div>
             </div>
@@ -243,4 +293,3 @@ export default function FeaturedProjects() {
     </section>
   );
 }
-
