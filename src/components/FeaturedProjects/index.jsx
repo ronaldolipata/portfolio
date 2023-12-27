@@ -25,7 +25,7 @@ export default function FeaturedProjects() {
   const featuredProjectsData = [
     {
       name: 'Koolweld Engineering Contractor',
-      desc: 'Improve overall designs, implemented upload feature for files and pictures, allowing the company to showcase their work and engage potential clients.',
+      desc: 'Revamped the website to improve overall designs, implement upload feature for files and pictures, allowing the company to showcase their work and engage potential clients.',
       src: {
         iphone:
           'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1686751427/Web%20Dev%20Portfolio/featured-projects/koolweld-iphone_jycwpd.png',
