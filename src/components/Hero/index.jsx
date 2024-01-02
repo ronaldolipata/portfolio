@@ -1,9 +1,9 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import style from '@/components/Home/style.module.css';
+import style from '@/components/Hero/style.module.css';
 
-export default function Home() {
+export default function Hero() {
   return (
-    <section id="home" className={style.container}>
+    <section id="hero" className={style.container}>
       <div className={style.text}>
         <p className={style.textOpacity}>Hello! My name is</p>
         <h1 className={style.title}>
@@ -13,9 +13,9 @@ export default function Home() {
         </h1>
         <p className={style.textOpacity}>
           I am proficient in both front-end and back-end web development,
-          capable of building complete and functional websites and web applications. With
-          expertise in JavaScript, databases, and frameworks, I can design,
-          develop, and deploy web solutions.
+          capable of building complete and functional websites and web
+          applications. With expertise in JavaScript, databases, and frameworks,
+          I can design, develop, and deploy web solutions.
         </p>
         <a className={style.ctaButton} href="#contact">
           Get in touch

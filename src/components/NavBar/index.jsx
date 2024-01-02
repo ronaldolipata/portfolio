@@ -9,7 +9,7 @@ export default function NavBar() {
   const refNavLink = useRef('hidden');
 
   const navLinks = [
-    'home',
+    'hero',
     'about',
     'skills',
     'projects',
@@ -34,10 +34,10 @@ export default function NavBar() {
   return (
     <header className={style.container} ref={refHeader}>
       <div className={style.subContainer}>
-        <a href='#home' className={style.logo}>
+        <a href="#hero" className={style.logo}>
           <LazyLoadImage
-            src='https://res.cloudinary.com/dkpg4tdoq/image/upload/v1676132061/Web%20Dev%20Portfolio/dark-theme/dark-theme-logo_fwtr6i.svg'
-            alt='Logo'
+            src="https://res.cloudinary.com/dkpg4tdoq/image/upload/v1676132061/Web%20Dev%20Portfolio/dark-theme/dark-theme-logo_fwtr6i.svg"
+            alt="Logo"
           />
         </a>
         <nav>
@@ -50,12 +50,12 @@ export default function NavBar() {
                   ref={refNavLink}
                   onClick={removeStyle}
                 >
-                  {link}
+                  {link === 'hero' ? 'home' : link}
                 </a>
               </li>
             ))}
             <a
-              href='#contact'
+              href="#contact"
               className={`${style.ctaButton} ${style.mobile}`}
               onClick={removeStyle}
             >
@@ -63,7 +63,7 @@ export default function NavBar() {
             </a>
           </ul>
         </nav>
-        <a href='#contact' className={`${style.ctaButton} ${style.desktop}`}>
+        <a href="#contact" className={`${style.ctaButton} ${style.desktop}`}>
           Request Resume
         </a>
         <div

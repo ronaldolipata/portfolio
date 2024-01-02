@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import style from '@/components/App/style.module.css';
 
 const NavBar = lazy(() => import('@/components/NavBar'));
-const Home = lazy(() => import('@/components/Home'));
+const Hero = lazy(() => import('@/components/Hero'));
 const About = lazy(() => import('@/components/About'));
 const Skills = lazy(() => import('@/components/Skills'));
 const FeaturedProjects = lazy(() => import('@/components/FeaturedProjects'));
@@ -36,7 +36,7 @@ export default function App() {
       <NavBar />
       <div className={style.container}>
         <main className={style.main}>
-          <Home />
+          <Hero />
           <About />
           <Skills />
           <FeaturedProjects />
