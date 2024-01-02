@@ -2,27 +2,43 @@ import style from '@/components/About/style.module.css';
 
 export default function About() {
   return (
-    <section id='about' className={style.container}>
+    <section id="about" className={style.container}>
       <h2 className={style.sectionTitle}>About me</h2>
       <div className={style.subContainer}>
         <p className={style.text}>
-          I am passionate about creating
-          <span className={style.primaryColor}> intuitive and responsive </span>
-          web applications that provide a seamless user experience.
+          Hey there! I'm passionate about creating seamless web applications,
+          diving deep into both frontend and backend development. My interests
+          span across Software Development, AI, Blockchain, Investing,
+          Entrepreneurship, and Agriculture.
         </p>
         <p className={style.text}>
-          With my skills in MERN stack, REST API, Next.js, WordPress, and Figma, I can develop {''}
-          <span className={style.primaryColor}>
-            dynamic and interactive
-          </span>{' '}
-          frontend interfaces, as well as{' '}
-          <span className={style.primaryColor}>efficient and robust</span>{' '}
-          backend.
+          Lately, I've been exploring the{' '}
+          <span class={style.primaryColor}>
+            Internet Computer Protocol (ICP) with Motoko
+          </span>
+          , feeling a deep conviction about its potential to shake up the tech
+          world.
         </p>
         <p className={style.text}>
-          I am a firm believer in the importance of staying up-to-date with the
-          latest industry trends and technologies. As such, I am constantly
-          expanding my skillset and learning new tools to improve my work.
+          You can peek into my projects and contributions on GitHub:{' '}
+          <a
+            class={style.primaryColor}
+            href="https://github.com/ronaldolipata"
+            target="_blank"
+          >
+            https://github.com/ronaldolipata
+          </a>
+        </p>
+        <p className={style.text}>
+          Let's{' '}
+          <a
+            class={style.primaryColor}
+            href="https://www.linkedin.com/in/ronaldolipata/"
+            target="_blank"
+          >
+            connect
+          </a>{' '}
+          and team up on some exciting projects!
         </p>
       </div>
     </section>
