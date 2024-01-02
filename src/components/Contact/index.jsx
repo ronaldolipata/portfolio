@@ -9,15 +9,15 @@ export default function Contact() {
       <h2 className={style.sectionTitle}>Get in touch</h2>
       <div className={style.textContainer}>
         <p className={style.text}>
-          Hey there! How are you? I hope you are doing great! :)
+          Thank you for stopping by! Whether you have a business inquiry,
+          collaboration proposal, or just want to say hello, I'd love to hear
+          from you.
         </p>
         <p className={style.text}>
-          If you have an inquiry, you may reach me at LinkedIn or send a message
-          to below email.
-        </p>
-        <p className={`${style.text} ${style.email}`}>
+          You can reach me through:{' '}
           <span className={style.primaryColor}> lipata.ronaldo@gmail.com</span>
         </p>
+        <p>I am also available on below:</p>
         <div className={style.socialIconsContainer}>
           <a
             href="https://www.linkedin.com/in/ronaldolipata/"
@@ -55,7 +55,7 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <span className={style.primaryColor}>Hire me!</span>
+            <span className={style.primaryColor}>Hire me on Upwork</span>
             <SiUpwork className={style.upwork} />
           </a>
         </div>
