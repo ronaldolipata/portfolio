@@ -114,7 +114,7 @@ export default function FeaturedProjects() {
       projectType: 'employment',
       github: '',
       demo: 'https://bigbengroup.ph/',
-      completed: false,
+      completed: true,
       availability: true,
     },
     {
@@ -159,7 +159,7 @@ export default function FeaturedProjects() {
       projectType: 'employment',
       github: '',
       demo: 'https://innovnational.com/aboitizsustainability/',
-      completed: false,
+      completed: true,
       availability: true,
     },
     {
