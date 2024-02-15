@@ -6,6 +6,8 @@ import {
   FaNodeJs,
   FaWordpress,
   FaBootstrap,
+  FaLinode,
+  FaCloudflare
 } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import {
@@ -23,6 +25,51 @@ import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
 
 export default function FeaturedProjects() {
   const featuredProjectsData = [
+    {
+      name: 'Intersect Professional Services',
+      desc: 'Revamped the website to improve overall designs, add sections and pages. Additionally, enable users to reach out to the client through messaging via the contact form.',
+      src: {
+        iphone:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1707990988/Web%20Dev%20Portfolio/featured-projects/ips-iphone_kaycxx.png',
+        mackbook:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1707990989/Web%20Dev%20Portfolio/featured-projects/ips-macbook_tzk1ff.png',
+      },
+      techUsed: [
+        {
+          tech: 'WordPress',
+          img: <FaWordpress />,
+        },
+        {
+          tech: 'Tailwind',
+          img: <SiTailwindcss />,
+        },
+        {
+          tech: 'JavaScript',
+          img: <SiJavascript />,
+        },
+        {
+          tech: 'PHP',
+          img: <SiPhp />,
+        },
+        {
+          tech: 'MySQL',
+          img: <TbBrandMysql />,
+        },
+        {
+          tech: 'Linode',
+          img: <FaLinode />,
+        },
+        {
+          tech: 'Cloudflare',
+          img: <FaCloudflare />,
+        },
+      ],
+      projectType: 'part-time',
+      github: '',
+      demo: 'https://intersectprofessionalservices.com/',
+      completed: true,
+      availability: true,
+    },
     {
       name: 'Koolweld Engineering Contractor',
       desc: 'Revamped the website to improve overall designs, implement upload feature for files and pictures, allowing the company to showcase their work and engage potential clients.',
