@@ -12,8 +12,8 @@ export default function Hero() {
           <span className={style.underline}> Web.</span>
         </h1>
         <p className={style.textOpacity}>
-          I am proficient in both frontend and backend web development, capable of building complete
-          and functional websites and web applications.
+          I am proficient in frontend, and backend web development, capable of building complete and
+          functional websites and web applications.
         </p>
         <a className={style.ctaButton} href='#contact'>
           Get in touch
