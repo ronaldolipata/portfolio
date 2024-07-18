@@ -3,7 +3,7 @@ import style from '@/components/Hero/style.module.css';
 
 export default function Hero() {
   return (
-    <section id="hero" className={style.container}>
+    <section id='hero' className={style.container}>
       <div className={style.text}>
         <p className={style.textOpacity}>Hello! My name is</p>
         <h1 className={style.title}>
@@ -12,20 +12,18 @@ export default function Hero() {
           <span className={style.underline}> Web.</span>
         </h1>
         <p className={style.textOpacity}>
-          I am proficient in both front-end and back-end web development,
-          capable of building complete and functional websites and web
-          applications. With expertise in JavaScript, databases, and frameworks,
-          I can design, develop, and deploy web solutions.
+          I am proficient in both frontend and backend web development, capable of building complete
+          and functional websites and web applications.
         </p>
-        <a className={style.ctaButton} href="#contact">
+        <a className={style.ctaButton} href='#contact'>
           Get in touch
         </a>
       </div>
       <div>
         <LazyLoadImage
           className={style.heroImage}
-          src="https://res.cloudinary.com/dkpg4tdoq/image/upload/v1676132066/Web%20Dev%20Portfolio/hero-picture/Ron_taapsq.svg"
-          alt="Ronaldo Lipata"
+          src='https://res.cloudinary.com/dkpg4tdoq/image/upload/v1676132066/Web%20Dev%20Portfolio/hero-picture/Ron_taapsq.svg'
+          alt='Ronaldo Lipata'
         />
       </div>
     </section>
