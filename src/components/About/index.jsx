@@ -7,12 +7,12 @@ export default function About() {
       <div className={style.subContainer}>
         <p className={style.text}>
           Hey there! I'm passionate about creating seamless web applications, diving deep into both
-          frontend and backend development. My interests span across Software Development,Investing,
-          Entrepreneurship, and Agriculture.
+          frontend and backend development. My interests span across Software Development,
+          Investing, Entrepreneurship, and Agriculture.
         </p>
         <p className={style.text}>
           You can peek into my projects and contributions on GitHub:{' '}
-          <a class={style.primaryColor} href='https://github.com/ronaldolipata' target='_blank'>
+          <a className={style.primaryColor} href='https://github.com/ronaldolipata' target='_blank'>
             https://github.com/ronaldolipata
           </a>
         </p>
