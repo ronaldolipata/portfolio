@@ -8,6 +8,9 @@ import {
   FaBootstrap,
   FaLinode,
   FaCloudflare,
+  FaReact,
+  FaLaravel,
+  FaDigitalOcean,
 } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import {
@@ -18,13 +21,105 @@ import {
   SiExpress,
   SiMongodb,
   SiPhp,
+  SiPostgresql,
 } from 'react-icons/si';
 import { TbBrandMysql } from 'react-icons/tb';
+import { PiLightbulbFilament } from 'react-icons/pi';
 import { ReactComponent as RestIcon } from '@/assets/svg/rest-api-icon.svg';
 import { ReactComponent as MongooseIcon } from '@/assets/svg/mongoose-icon.svg';
 
 export default function FeaturedProjects() {
   const featuredProjectsData = [
+    {
+      name: 'XCR Collections Management',
+      desc: 'A web app where MIS uploads Excel files from banks, allowing Tele and Field users to input remarks and status updates, and easily export the data back to an Excel file.',
+      src: {
+        iphone:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1722364152/Web%20Dev%20Portfolio/featured-projects/xcr-iphone_m0gwdl.png',
+        mackbook:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1722364152/Web%20Dev%20Portfolio/featured-projects/xcr-macbook_gizoca.png',
+      },
+      techUsed: [
+        {
+          tech: 'Filament',
+          img: <PiLightbulbFilament />,
+        },
+        {
+          tech: 'Laravel',
+          img: <FaLaravel />,
+        },
+        {
+          tech: 'PHP',
+          img: <SiPhp />,
+        },
+        {
+          tech: 'PostgreSQL',
+          img: <SiPostgresql />,
+        },
+        {
+          tech: 'Tailwind',
+          img: <SiTailwindcss />,
+        },
+        {
+          tech: 'DigitalOcean',
+          img: <FaDigitalOcean />,
+        },
+      ],
+      projectType: 'freelance',
+      github: '',
+      demo: '',
+      completed: false,
+      availability: false,
+    },
+    {
+      name: 'Prescience',
+      desc: 'An intuitive web app where users choose between pairs of images until they reach the set limit and complete all assigned choices. Features include separate dashboards for Admins and Users to manage and view decisions effortlessly.',
+      src: {
+        iphone:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1722364152/Web%20Dev%20Portfolio/featured-projects/prescience-iphone_qwe3z1.png',
+        mackbook:
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1722364152/Web%20Dev%20Portfolio/featured-projects/prescience-macbook_o5eh0j.png',
+      },
+      techUsed: [
+        {
+          tech: 'React.js',
+          img: <FaReact />,
+        },
+        {
+          tech: 'Tailwind',
+          img: <SiTailwindcss />,
+        },
+        {
+          tech: 'JavaScript',
+          img: <SiJavascript />,
+        },
+        {
+          tech: 'Node.js',
+          img: <FaNodeJs />,
+        },
+        {
+          tech: 'Express.js',
+          img: <SiExpress />,
+        },
+        {
+          tech: 'REST API',
+          img: <RestIcon className={style.restIcon} />,
+        },
+        {
+          tech: 'MongoDB',
+          img: <SiMongodb />,
+        },
+        {
+          tech: 'Linode',
+          img: <FaLinode />,
+        },
+      ],
+      projectType: 'freelance',
+      github: '',
+      demo: 'http://192.46.222.45/',
+      completed: false,
+      availability: true,
+    },
     {
       name: 'Intersect Professional Services',
       desc: 'Revamped the website to improve overall designs, add sections and pages. Additionally, enable users to reach out to the client through messaging via the contact form.',
@@ -64,7 +159,7 @@ export default function FeaturedProjects() {
           img: <FaCloudflare />,
         },
       ],
-      projectType: 'part-time',
+      projectType: 'freelance',
       github: '',
       demo: 'https://intersectprofessionalservices.com/',
       completed: true,
