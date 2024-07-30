@@ -7,7 +7,7 @@ import {
   FaWordpress,
   FaBootstrap,
   FaLinode,
-  FaCloudflare
+  FaCloudflare,
 } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import {
@@ -32,7 +32,7 @@ export default function FeaturedProjects() {
         iphone:
           'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1707990988/Web%20Dev%20Portfolio/featured-projects/ips-iphone_kaycxx.png',
         mackbook:
-          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1707990989/Web%20Dev%20Portfolio/featured-projects/ips-macbook_tzk1ff.png',
+          'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1722364152/Web%20Dev%20Portfolio/featured-projects/ips-macbook_kfk385.png',
       },
       techUsed: [
         {
@@ -241,28 +241,14 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section id="projects">
+    <section id='projects'>
       {featuredProjectsData.map(
         (
-          {
-            name,
-            desc,
-            src,
-            techUsed,
-            demo,
-            projectType,
-            github,
-            completed,
-            availability,
-          },
+          { name, desc, src, techUsed, demo, projectType, github, completed, availability },
           index
         ) => (
           <div key={name} className={style.container}>
-            {index !== 0 ? (
-              false
-            ) : (
-              <h2 className={style.sectionTitle}>Featured Projects</h2>
-            )}
+            {index !== 0 ? false : <h2 className={style.sectionTitle}>Featured Projects</h2>}
             <div
               className={
                 index % 2 === 0
@@ -272,16 +258,10 @@ export default function FeaturedProjects() {
             >
               <div className={style.projectDescription}>
                 <div className={style.projectTitleContainer}>
-                  <h3 className={`${style.primaryColor} ${style.projectTitle}`}>
-                    {name}
-                  </h3>
+                  <h3 className={`${style.primaryColor} ${style.projectTitle}`}>{name}</h3>
                   <div className={style.projectTagContainer}>
-                    <span className={style.projectTag}>
-                      {completed ? 'completed' : 'on-going'}
-                    </span>
-                    <span className={style.projectTag}>
-                      {projectType} project
-                    </span>
+                    <span className={style.projectTag}>{completed ? 'completed' : 'on-going'}</span>
+                    <span className={style.projectTag}>{projectType} project</span>
                   </div>
                 </div>
                 <p>{desc}</p>
@@ -295,25 +275,18 @@ export default function FeaturedProjects() {
                 <div className={style.ctaContainer}>
                   <a
                     href={demo}
-                    target="_blank"
-                    onClick={
-                      availability ? null : (event) => event.preventDefault()
-                    }
+                    target='_blank'
+                    onClick={availability ? null : (event) => event.preventDefault()}
                     className={style.ctaButton}
-                    rel="noreferrer"
+                    rel='noreferrer'
                   >
                     {availability ? 'View Demo' : 'Not available'}
                   </a>
                   {github !== '' ? (
                     <>
                       <span className={style.horizatalSeparation}>|</span>
-                      <a
-                        href={github}
-                        target="_blank"
-                        className={style.repository}
-                      >
-                        Repository{' '}
-                        <BsBoxArrowUpRight className={style.externalLinkIcon} />
+                      <a href={github} target='_blank' className={style.repository}>
+                        Repository <BsBoxArrowUpRight className={style.externalLinkIcon} />
                       </a>
                     </>
                   ) : (
@@ -325,12 +298,12 @@ export default function FeaturedProjects() {
                 <LazyLoadImage
                   className={style.projectImageIphone}
                   src={src.iphone}
-                  alt="featured project image in iphone"
+                  alt='featured project image in iphone'
                 />
                 <LazyLoadImage
                   className={style.projectImageMacbook}
                   src={src.mackbook}
-                  alt="featured project image in macbook"
+                  alt='featured project image in macbook'
                 />
               </div>
             </div>
