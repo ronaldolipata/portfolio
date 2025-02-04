@@ -10,7 +10,6 @@ import {
   FaFigma,
   FaTrello,
   FaGithub,
-  FaGitlab,
   FaWordpress,
 } from 'react-icons/fa';
 import {
@@ -135,10 +134,6 @@ export default function Skills() {
         {
           tech: 'GitHub',
           img: <FaGithub />,
-        },
-        {
-          tech: 'GitLab',
-          img: <FaGitlab />,
         },
         {
           tech: 'Vite',
