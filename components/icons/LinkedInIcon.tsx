@@ -1,8 +1,11 @@
 import React from 'react';
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {}
-
-export default function LinkedInIcon({ width = 24, height = 24, color, ...props }: IconProps) {
+export default function LinkedInIcon({
+  width = 24,
+  height = 24,
+  color,
+  ...props
+}: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

@@ -14,7 +14,7 @@ export default function Hero() {
         />
         <h1 className='text-3xl'>
           <span className='text-slate-600'>Hello, </span>
-          <span className='text-blue-600'>I'm Ronaldo Lipata.</span>
+          <span className='text-blue-600'>I&apos;m Ronaldo Lipata.</span>
         </h1>
       </div>
       <div className='flex flex-col gap-4 text-slate-600'>

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Section from '@/components/Section';
-import { Card } from '@/components/ui/card';
 
 export default function WorkExperiences() {
   return (
