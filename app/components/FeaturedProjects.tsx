@@ -1,6 +1,5 @@
 import CustomLink from '@/components/CustomLink';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 const featuredProjects = [
   {
@@ -254,10 +253,10 @@ export default function FeaturedProjects() {
             </div>
             <div className='flex flex-col items-center gap-4'>
               <div className='shadow-sm rounded-full'>
-                <Image src={src.iphone} width={300} height={100} alt={name} />
+                <img src={src.iphone} width={300} height={100} alt={name} />
               </div>
               <div className='hidden lg:block'>
-                <Image src={src.mackbook} width={400} height={100} alt={name} />
+                <img src={src.mackbook} width={400} height={100} alt={name} />
               </div>
             </div>
           </div>
