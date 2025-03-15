@@ -1,56 +1,36 @@
-# Ronaldo Lipata - Web Dev Portfolio
-I am proficient in both front-end and back-end web development, capable of building complete and functional web applications. With expertise in JavaScript, databases, and frameworks, I can design, develop, and deploy web solutions that meet clients' needs.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Getting started
+## Getting Started
 
-This project was created with `yarn create vite`
-
-## Requirements
-
-- Node JS
-
-## Installation
-
-Install the dependencies by running:
+First, run the development server:
 
 ```bash
-yarn install
-```
-## Development
-
-After the [installation](#installation), you can run
-
-```bash
-yarn run dev
-```
-
-This will run the app in the development mode.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-## Build
-
-This will build the app for production in `dist` folder.\
-It correctly bundles React in product mode, optimizes the build for the best performance.
-
-```bash
-yarn run build
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## lint
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This will check any errors or warnings in your codes, and will automatically fix by running:
-
-```bash
-yarn run lint:fix
-```
-
-For more information, check [ESLint documentation](https://eslint.org/)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/)
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
