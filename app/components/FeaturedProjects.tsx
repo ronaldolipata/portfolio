@@ -1,5 +1,6 @@
 import CustomLink from '@/components/CustomLink';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const featuredProjects = [
   {
@@ -206,20 +207,7 @@ export default function FeaturedProjects() {
   return (
     <div className='flex flex-col'>
       {featuredProjects.map(
-        (
-          {
-            name,
-            description,
-            src,
-            techUsed,
-            demoLink,
-            projectType,
-            github,
-            completed,
-            availability,
-          },
-          index
-        ) => (
+        ({ name, description, src, techUsed, demoLink, projectType, completed }, index) => (
           <div
             key={index}
             className={`flex flex-col gap-[4rem] py-12 ${
@@ -266,10 +254,10 @@ export default function FeaturedProjects() {
             </div>
             <div className='flex flex-col items-center gap-4'>
               <div className='shadow-sm rounded-full'>
-                <img src={src.iphone} width={300} height={100} alt={name} />
+                <Image src={src.iphone} width={300} height={100} alt={name} />
               </div>
               <div className='hidden lg:block'>
-                <img src={src.mackbook} width={400} height={100} alt={name} />
+                <Image src={src.mackbook} width={400} height={100} alt={name} />
               </div>
             </div>
           </div>
