@@ -204,16 +204,16 @@ const featuredProjects = [
 
 export default function FeaturedProjects() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col' id='featured-projects'>
       {featuredProjects.map(
         ({ name, description, src, techUsed, demoLink, projectType, completed }, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-[4rem] py-12 ${
-              index % 2 === 0 ? 'bg-slate-50 px-8 -mx-8' : ''
+            className={`lg:min-h-[calc(100vh-3.5rem)] flex flex-col lg:flex-row md:items-center lg:justify-between gap-[4rem] py-12 lg:p-24 md:text-center lg:text-left ${
+              index % 2 === 0 ? 'bg-slate-50 px-8 -mx-8 lg:rounded-4xl' : 'lg:flex-row-reverse'
             }`}
           >
-            <div className='flex flex-col gap-4'>
+            <div className='max-w-[37rem] flex flex-col md:items-center lg:items-start gap-4'>
               {index === 0 && (
                 <h2 className='mb-[1.25rem] text-xl font-semibold uppercase'>Featured Projects</h2>
               )}
@@ -231,7 +231,7 @@ export default function FeaturedProjects() {
                 </span>
               </div>
               <p className='text-slate-600'>{description}</p>
-              <div className='flex flex-wrap gap-1'>
+              <div className='flex flex-wrap md:justify-center lg:justify-start gap-1'>
                 {techUsed.map(({ tech }, index) => (
                   <span
                     key={index}
@@ -243,7 +243,7 @@ export default function FeaturedProjects() {
               </div>
               <div>
                 {demoLink ? (
-                  <CustomLink href={demoLink}>View Demo</CustomLink>
+                  <CustomLink href={demoLink}>View project</CustomLink>
                 ) : (
                   <Button className='cursor-not-allowed' variant={'outline'} disabled>
                     Not available, for private use only
@@ -251,7 +251,7 @@ export default function FeaturedProjects() {
                 )}
               </div>
             </div>
-            <div className='flex flex-col items-center gap-4'>
+            <div className='flex flex-col lg:flex-row items-center gap-4'>
               <div className='shadow-sm rounded-full'>
                 <img src={src.iphone} width={300} height={100} alt={name} />
               </div>

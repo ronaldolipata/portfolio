@@ -3,7 +3,7 @@ import Section from '@/components/Section';
 
 export default function WorkExperiences() {
   return (
-    <Section heading='Work Experience'>
+    <Section heading='Work Experience' textAlign='md:text-center'>
       <div className='flex flex-col gap-4'>
         <div>
           <p>
