@@ -121,12 +121,16 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Section heading='Skills' backgroundColor='bg-slate-50'>
-      <div className='flex flex-col gap-4'>
+    <Section
+      heading='Skills'
+      backgroundColor='bg-slate-50 lg:rounded-4xl'
+      textAlign='md:text-center'
+    >
+      <div className='flex flex-col lg:flex-row gap-4 md:mx-auto'>
         {skills.map(({ scope, skills }, index) => (
-          <div key={index} className='flex flex-col gap-2'>
+          <div key={index} className='max-w-[37rem] flex flex-col gap-2'>
             <h3 className='text-lg'>{scope}</h3>
-            <div className='flex flex-wrap gap-1'>
+            <div className='flex flex-wrap md:justify-center gap-1'>
               {skills.map(({ tech }, index) => (
                 <span
                   key={index}
