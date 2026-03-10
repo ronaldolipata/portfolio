@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import LinkedInIcon from '@/components/icons/LinkedInIcon';
-import GitHubIcon from './icons/GitHubIcon';
+import LinkedInIcon from '@/components/icons/linked-in-icon';
+import GitHubIcon from './icons/git-hub-icon';
 import { getCurrentYear } from '@/utils/getCurrentYear';
 
 export default function Footer() {

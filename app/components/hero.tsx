@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import CustomLink from '@/components/CustomLink';
+import CustomLink from '@/components/custom-link';
 
 export default function Hero() {
   return (

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Section from '@/components/Section';
+import Section from '@/components/section';
 
 export default function WorkExperiences() {
   return (
@@ -13,7 +13,7 @@ export default function WorkExperiences() {
         </div>
         <div>
           <p>
-            IT Support & Web Developer at{' '}
+            IT Support / Software Developer / Encoder at{' '}
             <Link
               href={'https://www.facebook.com/KOOLWELDENGINEERINGCONTRACTOR/'}
               target='_blank'

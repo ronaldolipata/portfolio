@@ -1,8 +1,8 @@
-import Hero from './components/Hero';
-import FeaturedProjects from './components/FeaturedProjects';
-import WorkExperiences from './components/WorkExperiences';
-import Skills from './components/Skills';
-import Footer from '@/components/Footer';
+import Hero from './components/hero';
+import FeaturedProjects from './components/featured-projects';
+import WorkExperiences from './components/work-experiences';
+import Skills from './components/skills';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
