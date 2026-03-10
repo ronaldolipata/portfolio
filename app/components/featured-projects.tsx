@@ -1,5 +1,6 @@
-import CustomLink from '@/components/CustomLink';
+import CustomLink from '@/components/custom-link';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const featuredProjects = [
   {
@@ -76,9 +77,8 @@ const featuredProjects = [
     ],
     projectType: 'employment',
     github: null,
-    demoLink: 'https://innovnational.com/aboitizsustainability/',
     completed: true,
-    availability: true,
+    availability: false,
   },
   {
     name: 'XCR Collections Management',
@@ -120,6 +120,40 @@ const featuredProjects = [
     availability: false,
   },
   {
+    name: 'Koolweld Engineering Contractor',
+    description:
+      'Revamped the website to improve overall designs, implement upload feature for files and pictures, allowing the company to showcase their work and engage potential clients.',
+    src: {
+      iphone: '/images/projects/koolweld/koolweld-iphone.png',
+      mackbook: '/images/projects/koolweld/koolweld-macbook.png',
+    },
+    techUsed: [
+      {
+        tech: 'Next.js',
+      },
+      {
+        tech: 'TypeScript',
+      },
+      {
+        tech: 'Tailwind',
+      },
+      {
+        tech: 'Shadcn-ui',
+      },
+      {
+        tech: 'Vercel',
+      },
+      {
+        tech: 'Cloudflare',
+      },
+    ],
+    projectType: 'freelance',
+    github: null,
+    demoLink: 'https://koolweld.com/',
+    completed: true,
+    availability: true,
+  },
+  {
     name: 'Intersect Professional Services',
     description:
       'Revamped the website to improve overall designs, add sections and pages. Additionally, enable users to reach out to the client through messaging via the contact form.',
@@ -155,48 +189,6 @@ const featuredProjects = [
     projectType: 'freelance',
     github: null,
     demoLink: 'https://intersectprofessionalservices.com/',
-    completed: true,
-    availability: true,
-  },
-  {
-    name: 'Koolweld Engineering Contractor',
-    description:
-      'Revamped the website to improve overall designs, implement upload feature for files and pictures, allowing the company to showcase their work and engage potential clients.',
-    src: {
-      iphone:
-        'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1686751427/Web%20Dev%20Portfolio/featured-projects/koolweld-iphone_jycwpd.png',
-      mackbook:
-        'https://res.cloudinary.com/dkpg4tdoq/image/upload/v1686751427/Web%20Dev%20Portfolio/featured-projects/koolweld-macbook_l87gnf.png',
-    },
-    techUsed: [
-      {
-        tech: 'Next.js 13',
-      },
-      {
-        tech: 'TypeScript',
-      },
-      {
-        tech: 'Tailwind',
-      },
-      {
-        tech: 'Node',
-      },
-      {
-        tech: 'Express',
-      },
-      {
-        tech: 'REST API',
-      },
-      {
-        tech: 'MongoDB',
-      },
-      {
-        tech: 'Mongoose',
-      },
-    ],
-    projectType: 'freelance',
-    github: null,
-    demoLink: 'https://koolweld.com/',
     completed: true,
     availability: true,
   },
@@ -243,7 +235,9 @@ export default function FeaturedProjects() {
               </div>
               <div>
                 {demoLink ? (
-                  <CustomLink href={demoLink}>View project</CustomLink>
+                  <CustomLink href={demoLink} target='_blank'>
+                    View project
+                  </CustomLink>
                 ) : (
                   <Button className='cursor-not-allowed' variant={'outline'} disabled>
                     Not available, for private use only
@@ -253,14 +247,14 @@ export default function FeaturedProjects() {
             </div>
             <div className='flex flex-col lg:flex-row items-center gap-4'>
               <div className='shadow-sm rounded-full'>
-                <img src={src.iphone} width={300} height={100} alt={name} />
+                <Image src={src.iphone} width={300} height={100} alt={name} />
               </div>
               <div className='hidden lg:block'>
-                <img src={src.mackbook} width={400} height={100} alt={name} />
+                <Image src={src.mackbook} width={400} height={100} alt={name} />
               </div>
             </div>
           </div>
-        )
+        ),
       )}
     </div>
   );
